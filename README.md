@@ -16,7 +16,7 @@ It uses the quantum java API Strange, available [here](https://github.com/gluonh
 
 ## Entangled Bell State
 
-This [Main](src/main/java/com/quantum/entanglement/bellstate/bell11/Main.java) java class implements a quantum circuit to illustrate the concept of entanglement with two qubits.
+This [Main](BellState/src/main/java/com/quantum/entanglement/bellstate/bell11/Main.java) java class implements a quantum circuit to illustrate the concept of entanglement with two qubits.
 
 This first quantum program brings two qubits to one of the four simplest and maximal entangled two-qubit states, i.e the Bell state |B11>.
 
