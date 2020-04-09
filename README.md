@@ -32,6 +32,41 @@ You can refer to this article [C-NOT gate, Bell State and Entanglement ](https:/
 
 And it may find be useful as well to read this article [Introduction-to-entanglement](https://einsteinrelativelyeasy.com/index.php/quantum-mechanics/147-introduction-to-entanglement) to give you an overall view of entanglement and to remind you that an entanglement state **can not be written as product state**.
 
+### Program
+
+This sample create a `Program` that requires 2 qubits via the instruction `Program p = new Program(2);`.
+
+It create two steps (`step1` and `step2`).
+
+The first step adds a Paul-X (NOT) Gate to the first qubit (index 0) via the line  `step1.addGate(new X(0))`. The first qubit then flips from |0> to |1>.
+
+The second steps adds a Hadamard Gate `H` to the first qubit (index 0), and a NOT gate `X` to the second qubit  (index 1), so we get finally the two-qubit state H|11>. 
+
+```
+step2.addGate(new Hadamard(0));
+step2.addGate(new X(1));
+```
+
+Both steps are added to the Program via
+```
+  p.addStep(step1);
+  p.addStep(step2);
+```
+  
+We then apply the CNOT gate on both qubits, which has for effect to invert the target (the second qubit) only when the control (the first qubit) is 1
+
+```
+Step step3 = new Step();
+step3.addGate(new Cnot(0,1));
+p.addStep(step3);
+```
+That's it. We only have to execute the program via
+
+```
+SimpleQuantumExecutionEnvironment sqee = new SimpleQuantumExecutionEnvironment();
+Result res = sqee.runProgram(p);
+```
+ 
 ### Running the Bellstate
 
 Run this program simply by invoking (on Windows)
