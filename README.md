@@ -28,9 +28,9 @@ which formally equates to:
 
 <img src="https://einsteinrelativelyeasy.com/images/Quantum/Bellstate9.gif"/>
 
-You can refer to this article [C-NOT gate, Bell State and Entanglement ](https://einsteinrelativelyeasy.com/index.php/quantum-mechanics/156-c-not-gate-bell-state-and-entanglement) from my website [einsteinrelativelyeasy.com](https://einsteinrelativelyeasy.com/) to refresh your mind about this formalism.
+You can refer to this article [C-NOT gate, Bell State and Entanglement ](https://einsteinrelativelyeasy.com/index.php/quantum-mechanics/156-c-not-gate-bell-state-and-entanglement) on my website [einsteinrelativelyeasy.com](https://einsteinrelativelyeasy.com/) to refresh your mind about this formalism.
 
-And it may find be useful as well to read this article [Introduction-to-entanglement](https://einsteinrelativelyeasy.com/index.php/quantum-mechanics/147-introduction-to-entanglement) to give you an overall view of entanglement and to remind you that an entanglement state **can not be written as product state**.
+And you may also find it useful to read this article [Introduction-to-entanglement](https://einsteinrelativelyeasy.com/index.php/quantum-mechanics/147-introduction-to-entanglement) to give you an overall view of entanglement and to remind you that an entanglement state **can not be written as product state**.
 
 ### Program
 
@@ -79,8 +79,8 @@ Run this program simply by invoking (on Windows)
 
 <img src="https://einsteinrelativelyeasy.com/images/Quantum/CNOT_program42.png" />
 
-2 But still this graphic does not show the main interest of this quantum circuit, i.e its entangled nature:
-we never observe the two-qubit states |00> or |11>.
+2 However, this graphic does still not show the main interest of this quantum circuit, i.e. its entangled nature:
+ the two-qubit states are never being observed as |00> or |11>.
 
 To illustrate this fundamental feature, we use the last instruction line `Renderer.showProbabilities(p, 1000)` which gives the probabilities of the final measured states over 1000 runs: in our case, we measure 526 times |01> and 474 times |10>, but **we get a zero probability to observe either |00> and |11> states**.
 
