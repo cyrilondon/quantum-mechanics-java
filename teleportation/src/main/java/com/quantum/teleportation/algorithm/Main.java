@@ -39,9 +39,10 @@ public class Main {
         Result result = simulator.runProgram(program);
         Qubit[] qubits = result.getQubits();
 		Qubit q_Alice1 = qubits[0];
-		Qubit q_Alice2 = qubits[1];
+		//Qubit q_Alice2 = qubits[1];
 		Qubit q_Bob = qubits[2];
 		int v_Bob = q_Bob.measure();
+		System.err.println("Alice's qubit measured = " + q_Alice1.measure() );
 		System.err.println("Bob's qubit measured = " + v_Bob );
 		Renderer.renderProgram(program);
         Renderer.showProbabilities(program, 1000);
