@@ -5,8 +5,8 @@
 
 - Install the jdk 11 from [here](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
 - Install gradle from here [here](https://gradle.org/releases/)
-- If you are using Linux or MacOS X, call the <code>run</code> task by invoking <code>./gradlew run</code>
-- If you are using Windows, call the <code>run</code> task by invoking <code>gradlew.bat run</code>
+- If you are using Linux or MacOS X, call the <code>run</code> task by invoking <code>./gradlew run</code> from <code>bellState</code> folder.
+- If you are using Windows, call the <code>run</code> task by invoking <code>gradlew.bat run</code> from <code>bellState</code> folder.
 
 
 This [Main](BellState/src/main/java/com/quantum/entanglement/bellstate/bell11/Main.java) java class implements a quantum circuit to illustrate the concept of entanglement with two qubits.
