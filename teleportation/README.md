@@ -6,6 +6,6 @@
 - Install maven from here [here](https://maven.apache.org/download.cgi)
 - Run the program by by invoking <code>mvn javafx:run</code> from the <code>teleportation</code> folder.
 
-This [Main](teleportation/src/main/java/com/quantum/entanglement/bellstate/bell11/Main.java) java class implements the teleportation algorithm as described in our article [The quantum teleportation algorithm](https://einsteinrelativelyeasy.com/index.php/quantum-mechanics/163-the-quantum-teleportation-algorithm)
+The [Main](src/main/java/com/quantum/teleportation/algorithm/Main.java) java class implements the teleportation algorithm as described in our article [The quantum teleportation algorithm](https://einsteinrelativelyeasy.com/index.php/quantum-mechanics/163-the-quantum-teleportation-algorithm)
 
 <img src="src/main/resources/teleportation1.png"/>
