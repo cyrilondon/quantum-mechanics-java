@@ -34,6 +34,23 @@ The next step is to have Alice perform a CNOT gate between her qubit |phi> and h
 
 <img src="src/main/resources/teleportation14.png"/>
 
+or more formally
+
+<img src="src/main/resources/teleportation15.png"/>
+
+Note that the state of the entire system (Alice + Bob qubits) is
+
+<img src="src/main/resources/teleportation16.gif"/>
+
+If we express |phi> in terms of the computational basis states |phi> = alpha |0> + beta |1> with (alpha,beta) complex numbers, we get four terms describing the whole state
+
+<img src="src/main/resources/teleportation17.gif"/>
+
+This expression enables us to easily perform a CNOT gate between the first and second qubits.  Doing so by flipping the second qubit only if the first qubit is |1>, we obtain the state:
+
+<img src="src/main/resources/teleportation18.gif"/>
+
+
 
 
 
