@@ -14,6 +14,13 @@ The [Main](src/main/java/com/quantum/teleportation/algorithm/Main.java) java cla
 
 ### Algorithm
 
+Our program begins by initializing three qubits
+
+```java
+QuantumExecutionEnvironment simulator = new SimpleQuantumExecutionEnvironment();
+Program program = new Program(3);
+```
+
 We assume that the first qubit (the top qubit q[0] in the above diagram) belongs to Alice and starts out in any `|phi>` state, since this is what the quantum teleportation algorithm assumes. 
 
 The second qubit (q[1] in the same diagram) belongs to Alice as well. 
@@ -22,6 +29,12 @@ The first thing to do is to share an entangled state between Alice and Bob by ap
 
 <img src="src/main/resources/teleportation11.png"/>
 
+Applying the Hadamard gate to Alice's first qubit is easily achieved via the java Strange API by:
+
+```java
+Step step1 = new Step();
+step1.addGate(new Hadamard(1));
+```
 In the lines below A stands for Alice and B stands for Bob, as the first qubit belongs to Alice (q[1] in the diagram above) and the second qubit belongs to Bob (q[2] in the diagram above).
 
 <img src="src/main/resources/teleportation12.gif"/>
@@ -30,12 +43,23 @@ This is almost an `EPR` pair. To make it exactly an `EPR` pair, as we know we ha
 
 <img src="src/main/resources/teleportation13.gif"/>
 
+```java
+Step step2 = new Step();
+step2.addGate(new Cnot(1,2));
+```
+
 We now have **Alice and Bob sharing an EPR pair**.
 
 The next step is to have Alice perform a `C-NOT` gate between her qubit `|phi>` and her half of the entangled pair.
 
 <img src="src/main/resources/teleportation14.png"/>
 
+In java we apply this C-Not gate easily by writing
+
+```java
+Step step3 = new Step();
+step3.addGate(new Cnot(0,1));
+```
 or more formally
 
 <img src="src/main/resources/teleportation15.png"/>
@@ -52,11 +76,19 @@ This expression enables us to easily perform a `C-NOT` gate between the first an
 
 <img src="src/main/resources/teleportation18.gif"/>
 
+
 We now have to perform a `Hadamard` gate on the first qubit:
 
 <img src="src/main/resources/teleportation19.png"/>
 
-Reminding us that applying the `Hadamard` gate to the basis states, we get:
+This is implemented in our java program via
+
+```java
+Step step4 = new Step();
+step4.addGate(new Hadamard(0));
+```
+
+Reminding us that applying the `Hadamard` gate to the basis states, this equates in quantum mechanics formalism to:
 
 <img src="src/main/resources/teleportation20.gif"/>
 
