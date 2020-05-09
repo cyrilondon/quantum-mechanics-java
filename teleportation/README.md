@@ -1,3 +1,5 @@
+ [![Build Status](https://travis-ci.com/cyrilondon/quantum-mechanics-java.svg?branch=master)](https://travis-ci.com/cyrilondon/quantum-mechanics-java)
+
 ## Teleportation algorithm
 
 ### Getting Started
