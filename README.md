@@ -1,3 +1,5 @@
+ [![Build Status](https://travis-ci.com/cyrilondon/quantum-mechanics-java.svg?branch=master)](https://travis-ci.com/cyrilondon/quantum-mechanics-java)
+
 # quantum-mechanics-java
 This project provides a java implementation of some well-known quantum algorithms as introduced in the `Quantum mechanics` section of our web site [einsteinrelativelyeasy.com](https://einsteinrelativelyeasy.com/index.php/quantum-mechanics)
 
