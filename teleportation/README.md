@@ -156,5 +156,5 @@ From the top half of the diagram, we see that there is now a probability of 25% 
 
 The bottom part of the figure shows a similar result: Bob's qubit measured as 1 corresponds to the last four combinations 100,101,110 and 111 and sum up roughly to 250.
 
-This is exactly what we hoped for!
+This is exactly what we hoped for! It shows that the algorithm **teleports** the quantum information originally contained in the qubit q[0] held by Alice to a qubit q[2] held by Bob.
 
