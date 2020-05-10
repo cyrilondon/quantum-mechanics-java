@@ -17,7 +17,6 @@ The [Main](src/main/java/com/quantum/teleportation/algorithm/Main.java) java cla
 Our program begins by initializing three qubits
 
 ```java
-QuantumExecutionEnvironment simulator = new SimpleQuantumExecutionEnvironment();
 Program program = new Program(3);
 ```
 
