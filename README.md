@@ -1,7 +1,7 @@
  [![Build Status](https://travis-ci.com/cyrilondon/quantum-mechanics-java.svg?branch=master)](https://travis-ci.com/cyrilondon/quantum-mechanics-java)
 
 # Quantum Mechanics Java
-This project provides a java implementation of some well-known quantum algorithms as introduced in the `Quantum mechanics` section of our web site [einsteinrelativelyeasy.com](https://einsteinrelativelyeasy.com/index.php/quantum-mechanics).
+This project provides a java implementation of some well-known quantum algorithms as introduced in the `Quantum Mechanics` section of our web site [einsteinrelativelyeasy.com](https://einsteinrelativelyeasy.com/index.php/quantum-mechanics).
 
 As for now, it provides the implementations of:
 - [Entangled Bell State](bellState)
